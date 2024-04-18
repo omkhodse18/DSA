@@ -9,7 +9,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-// APPROACH | 
+// APPROACH | TC = O(2N) | SC = O(1)
 
 class Solution {
 public:
