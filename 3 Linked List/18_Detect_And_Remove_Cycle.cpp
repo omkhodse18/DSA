@@ -65,5 +65,24 @@ Node *removeLoop(Node *head){
     temp->next = NULL;
 
     return head;
+}
+
+// APP-2 | HASHING | TC = O(N) | SC = O(N)
+
+void removeLoop2(Node* head){
+    unordered_map<Node*, int> mp;
+    Node* prev = NULL;
+    Node* temp = head;
     
+    while(temp!=NULL){
+        if(mp.find(temp) == mp.end()){
+            mp[temp] += 1;
+            prev = temp;
+            temp = temp->next;
+        }
+        else{
+            prev->next = NULL;
+            break;
+        }
+    }
 }
