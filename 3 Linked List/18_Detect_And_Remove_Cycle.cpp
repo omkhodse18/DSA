@@ -21,8 +21,9 @@ class Node{
         }
 };
 
-//APP - TC = O(2N) | SC = O(1)
+// https://www.naukri.com/code360/problems/interview-shuriken-42-detect-and-remove-loop_241049?leftPanelTabValue=PROBLEM
 
+//APP - TC = O(2N) | SC = O(1)
 Node* startOfLoop(Node* head){
     Node* slow = head;
     Node* fast = head;
